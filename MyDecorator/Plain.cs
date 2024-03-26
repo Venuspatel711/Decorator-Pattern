@@ -4,6 +4,6 @@ public class PlainDecorator : Decorator<string>
 
     public override string GetText()
     {
-        return "Prefix: " + base.GetText();
+        return base.GetText();
     }
 }
