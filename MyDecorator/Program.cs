@@ -1,17 +1,16 @@
 ﻿namespace MyDecorator;
 class Program
 {
-   
     static void Main()
     {
         Deco_Interface<string> component = new ConcreteComponent();
 
-        var plainDeco = new PlainDecorator(component);
-        var upperCaseDeco = new UpperCaseDecorator(component);
-        var colorDeco = new ColorDecorator(component);
+        var plainText = new PlainDecorator(component);
+        var upperText = new UpperCaseDecorator(component);
+        var colorText = new ColorDecorator(component);
 
-        Console.WriteLine(plainDeco.GetText());
-        Console.WriteLine(upperCaseDeco.GetText());
-        Console.WriteLine(colorDeco.GetText());
+        Console.WriteLine(plainText.GetText());
+        Console.WriteLine(upperText.GetText());
+        Console.WriteLine(colorText.GetText());
     }
 }
