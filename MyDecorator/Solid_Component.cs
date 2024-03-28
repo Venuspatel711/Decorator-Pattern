@@ -1,4 +1,4 @@
-public class ConcreteComponent : Deco_Interface<string>
+public class SolidComponent : Deco_Interface<string>
 {
     public string GetText()
     {
