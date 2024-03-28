@@ -1,4 +1,5 @@
-﻿class Program
+﻿namespace MyDecorator;
+class Program
 {
    
     static void Main()
