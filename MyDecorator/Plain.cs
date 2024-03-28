@@ -1,6 +1,6 @@
-public class PlainDecorator : Decorator<string>
+public class Plain_Decorator : Decorator<string>
 {
-    public PlainDecorator(Deco_Interface<string> component) : base(component) { }
+    public Plain_Decorator(Deco_Interface<string> component) : base(component) { }
 
     public override string GetText()
     {

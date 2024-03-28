@@ -5,9 +5,9 @@ class Program
     {
         Deco_Interface<string> component = new ConcreteComponent();
 
-        var plainText = new PlainDecorator(component);
-        var upperText = new UpperCaseDecorator(component);
-        var colorText = new ColorDecorator(component);
+        var plainText = new Plain_Decorator(component);
+        var upperText = new Upper_Decorator(component);
+        var colorText = new Color_Decorator(component);
 
         Console.WriteLine(plainText.GetText());
         Console.WriteLine(upperText.GetText());
